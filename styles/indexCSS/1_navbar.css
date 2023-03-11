@@ -1,0 +1,126 @@
+/* NAVBAR =================================== */
+#header {
+    background-color: #222;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    /* box-shadow: 0px 0px 100px 12px #000000b0; */
+    border-bottom: 1px solid #62626244;
+    z-index: 1000;
+}
+
+.nav-bar {
+    position: relative;
+    background: #06616100;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    line-height: 60px;
+
+    
+}
+
+.logo a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo a img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.menuDestok {
+    background-color: #ffffff00;
+    position: relative;
+    display: flex;
+    line-height: 60px;
+}
+
+.menuDestok li {
+    margin: 0px 15px 0px 15px;
+}
+
+.menuDestok li a {
+    color: #a87b05;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menuDestok li a:hover {
+    color: #efb810;
+}
+
+.Iniciar_sesion_btn_menuDestok {
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.Iniciar_sesion_btn_menuDestok:hover {
+    background-color: #444;
+}
+
+.Iniciar_sesion_btn_menuMobil {
+    background-color: #444;
+    padding: 15px 50px;
+    border-radius: 20px;
+}
+
+
+.btnBurger {
+    position: absolute;
+    right: 2rem;
+    line-height: 60px;
+    display: none;
+}
+
+.btnBurger i {
+    color: #a87b05;
+    font-size: 25px;
+}
+
+.menuMobil {
+    position: absolute;
+    top: -750px;
+    right: 1rem;
+    width: 300px;
+    height: auto;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    align-items: center;
+    padding: 15px 0px;
+    z-index: 1000;
+    display: none;
+}
+
+.menuMobilaACTIVO {
+    top: 75px;
+}
+
+.menuMobil li {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin: 15px 0px;
+}
+
+.menuMobil li a {
+    text-transform: uppercase;
+    color: #a87b05;
+}
+
+/* ++++++++++++++++++++++++++ */
+/* .menuMobilACTIVO {
+} */

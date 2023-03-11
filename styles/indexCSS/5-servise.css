@@ -1,0 +1,93 @@
+.service-contenedor {
+	display: flex;
+	align-items: center;
+	background-color: rgba(255, 68, 84, 0);
+	justify-content: center;
+}
+.service-contenedor :nth-child(2){
+	justify-content: center;
+}
+.formulario-div {
+	width: 100%;
+	background-color: rgba(84, 68, 255, 0);
+	display: grid;
+	place-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 30px 0px;
+}
+.formulario-div form {
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 0px;
+}
+.formulario-div textarea {
+	width: 100%;
+	margin: 8px 10px 0px 10px;
+	border-radius: 10px;
+	padding: 6px;
+	max-width: calc(100% - 23px);
+	max-height: calc(188px - 23px);
+	min-width: calc(100% - 23px);
+	min-height: calc(188px - 23px);
+	border: 0.5px solid #333;
+	writing-mode: none;
+	outline: none;
+	color: #333;
+	background-color: #fff;
+	-webkit-rtl-ordering: none;
+	column-span: none;
+	letter-spacing: -.2px;
+	background-color: #999;
+}
+.formulario-div textarea::-webkit-scrollbar{
+	background-color: #c72a2a00;
+	display: none;
+	position: absolute;
+}
+
+
+.formulario-div form p label {
+	width: 100%;
+	padding-left: 6px;
+	padding-bottom: 3px;
+	color: #999;
+}
+.formulario-div form p input {
+	width: calc(100% - 17px);
+	padding: 6px 8px 6px 8px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	color: #555;
+	border: 0.5px solid #555;
+	text-decoration: none;
+	background-color: #999;
+}
+.rellenadores p {
+	margin: 8px 10px;
+}
+.contenedor__boton__services{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boton__services{
+	padding: 6px 10px;
+	border-radius: 20px;
+	outline: none;
+	border: 1px solid #999;
+	margin: 15px 0px;
+	width: 40%;
+	background-color: #555;
+	border: none;
+}
+
+.boton__services:hover{
+    border: 1px solid #555;
+}
+

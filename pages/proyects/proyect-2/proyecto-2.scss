@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    overflow: hidden;
+    outline: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #222;
+    background-image: url(./fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    // overflow: hidden;
+    position: relative;
+
+    header {
+        width: 100%;
+        background-color: #ffffff31;
+        backdrop-filter: blur(15px);
+        position: fixed;
+
+        .navBar {
+            margin: 0px auto;
+            max-width: 1300px;
+            height: 3rem;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+
+            ul {
+                display: flex;
+                margin: .25rem 2rem;
+                position: relative;
+
+                li {
+                    // padding: px;
+                    // margin: 0.5rem;
+                    padding: 10px;
+                    position: relative;
+                    transition: 200ms;
+                    a {
+                        
+                        font-weight: 700;
+                        color: #ffffff;
+                        padding: 7px 7px;
+                        // border-radius: 25px;
+                        transition: all 500ms;
+                        z-index: 10;
+                        // background-color: #fff;
+                        border-radius: 10px;
+                    }
+
+                    a:hover {
+                        background-color: #222;
+                        border-radius: 10px;
+                    }
+                    
+                }
+                li:hover{
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}
+
+
+.menu{
+    width: 20px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+}
+
+.menu i{
+    vertical-align:middle;
+}
+
+.menu1 {
+    display: none;
+    margin: 0.7rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.menu2 {
+    display: none;
+    margin: 0.7rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.ACTIVO {
+    right: 1rem !important;
+}
+
+.BurguerMenu-1 {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.297);
+    backdrop-filter: blur(15px);
+    border: .1px solid #8076769b;
+    position: absolute;
+    right: -1000px;
+    top: 4rem;
+    width: 200px;
+    height: auto;
+    margin: 0px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 500ms ease;
+    position: fixed;
+
+    ul {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+
+        li {
+            margin: 2px;
+            padding: 10px 0px;
+
+            a {
+                color: #ffffff;
+                font-weight: 700;
+                text-transform: uppercase;
+                border-radius: 20px;
+                padding: 6px 14px;
+                transition: all 400ms;
+                z-index: 10;
+            }
+
+            a:hover {
+                background-color: #222;
+            }
+        }
+    }
+}
+
+
+.BurguerMenu-2 {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.297);
+    backdrop-filter: blur(15px);
+    border: .1px solid #8076769b;
+    position: absolute;
+    right: -1000px;
+    top: 4rem;
+    width: 200px;
+    height: auto;
+    margin: 0px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    display: none;
+    transition: all 500ms ease;
+    position: fixed;
+
+    ul {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            margin: 2px;
+            padding: 10px;
+
+            a {
+                
+                color: #ffffff;
+                font-weight: 700;
+                text-transform: uppercase;
+                border-radius: 20px;
+                padding: 6px 14px;
+                transition: all 400ms;
+            }
+            a:hover {
+                background-color: #222;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .navBar {
+        .links-right {
+            display: none;
+        }
+
+        .logo {
+            order: -1;
+            margin: 0.7rem;
+        }
+
+
+
+
+        .menu1 {
+            display: block;
+        }
+
+        .menu2 {
+            display: none;
+        }
+
+
+
+    }
+
+    .BurguerMenu-1 {
+        display: block;
+    }
+
+    .BurguerMenu-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .navBar {
+        .links-left {
+            display: none;
+        }
+    }
+
+    .menu1 {
+        display: none !important;
+    }
+
+    .menu2 {
+        display: block !important;
+        ;
+    }
+
+
+
+    .BurguerMenu-1 {
+        display: none !important;
+    }
+
+    .BurguerMenu-2 {
+        display: block !important;
+    }
+}
+@media (max-height: 400px) { 
+    
+}
+
+.container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 3rem);
+    .boton-container{
+        background-color: #c2515100;
+        #btnSalir{
+            padding: 7px 20px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            color: #333;
+            font-size: 13px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            background-color: #bcbcbcd1;
+            cursor: pointer;
+        }
+    }
+}

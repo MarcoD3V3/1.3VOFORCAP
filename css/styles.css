@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif, Arial, Helvetica;
+    text-decoration: none;
+    list-style: none;
+    transition: 300ms;
+}
+#body {
+    transition: .5s;
+}
+hr {
+    color: black;
+    background-color: blueviolet;
+    width: cal(100% - 4px);
+    border: .00001px solid black
+}
+.container {
+    max-width: 1018px;
+    margin: 0px auto;
+    /* background-color: rgb(209, 115, 0); */
+}
+#header {
+    background-color: rgb(0, 156, 104);
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    box-shadow: 0px 0px 100px 12px #000000b0;
+    z-index: 100;
+}
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*MENU AMBURGESA +++++++++++++++++++ */
+#btn-burguer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn-burguer img {
+    /*menu amburquesa img*/
+    width: 18px;
+}
+#btn-burguer {
+    display: none;
+}
+/* LOGO  +++++++++++++++++++++++++++++++++++*/
+.logo {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.logo img {
+    position: static;
+    width: 33px;
+}
+/* links del encabezado +++++++++++++++++++ */
+.links-box {
+    display: flex;
+    align-items: center;
+    margin: 0px 12px;
+}
+.links-box li {
+    text-align: center;
+    padding: 2px 10px;
+}
+.links-box li a {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .7px;
+    transition: 400ms;
+}
+.links-box li a:hover {
+    color: rgb(61, 122, 45);
+}
+/* intro de html +++++++++++++++++++  */
+.intro {
+    background-color: lightblue;
+}
+.introclaseHTML {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    flex-wrap: wrap;
+}
+#contenedor-img-intro {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px;
+    margin: 0px;
+    width: 40%;
+    flex-direction: column;
+    border-radius: 25px;
+    text-align: center;
+}
+#contenedor-img-intro img {
+    width: 100%;
+    border-radius: 30px;
+    margin: 0px;
+}
+#contenedor-img-intro p {
+    margin: 10px 0px;
+}
+#contenedor-descripcion-intro {
+    width: 60%;
+}
+#contenedor-descripcion-intro h4 {
+    font-size: 29px;
+    margin: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+#contenedor-descripcion-intro p {
+    margin: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+/* TODOS LOS CURSOS  +++++++++++++++++++ */
+#cursos {
+    background-color: rgb(112, 112, 77);
+}
+.curso .titulo-curso {
+    display: flex;
+    align-items: center;
+}
+.titulo-curso h4{
+    font-size: 18px;
+}
+.curso .titulo-curso img {
+    width: 20px;
+    margin-right: 8px;
+}
+#titulo-de-cursos{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+    text-align: center;
+    justify-content: center;
+}
+#titulo-de-cursos h4{
+    /*titulo de todos el listado de cursos*/
+    width: 70%;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+#cursos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.curso {
+    width: calc(24% - 80px);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.curso img {
+    width: 100%;
+    cursor: pointer;
+}
+.curso p,
+a {
+    font-size: 13px;
+}
+/* EL FOOTER +++++++++++++++++++  */
+#footer {
+    background-color: lightskyblue;
+}
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-hr {
+    color: black;
+    background-color: blueviolet;
+    width: 100%;
+    border: .2px solid black
+}
+#footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+#footer-logo img {
+    width: 70px;
+}
+#footer-logo h4 {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 120%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#derechos-autor-copy {
+    width: 100%;
+    height: 30px;
+}
+.media-account {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    flex-wrap: wrap;
+}
+#social-meadia {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.social-media-content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.social-media-content {
+    border: 2px solid hsl(203, 90%, 69%);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(203, 93%, 71%);
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+.social-media-content:hover {
+    background-color: hsl(203, 97%, 65%);
+    border-radius: 3px solid hsl(203, 66%, 46%);
+}
+.social-media-link {
+    cursor: pointer;
+}
+#derechos-autor-copy {
+    text-align: justify;
+}
+#derechos-autor-copy h6 {
+    font-size: 13px;
+    text-align: justify;
+}
+#descripcion-copy {
+    margin-bottom: 20px;
+}
+#descripcion-copy {
+    width: 100%;
+}
+#descripcion-copy p {
+    font-size: 11px;
+}
+/* ZONA DE RESPONSIVE @MEDIA SCREEN=====================================
+============================================================================
+===========================================================
+====================================== */
+@media screen and (max-width: 833px) {
+    .curso {
+        width: calc(25% - 70px);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width: 768px){
+    #contenedor-descripcion-intro p{
+        font-size: 15.7px;
+        margin: 10px 22px 10px 12px;
+    }
+    #contenedor-descripcion-intro h4 {
+        font-size: 22px;
+        margin: 10px 22px 18px 12px;
+    }
+    .curso{
+        width: calc(25% - 60px);
+    }
+}
+@media screen and (max-width: 650px){
+    .titulo-curso h4{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* NAV BAR */
+    .links-box {
+        display: none;
+    }
+    .logo {
+        margin: 10px;
+    }
+    /* BOTON AMBURGESA */
+    #btn-burguer {
+        display: block;
+        margin-right: 20px;
+    }
+    /* INTRO */
+    .introclaseHTML {
+        height: 700px;
+        align-items: start;
+        display: block;
+    }
+    #contenedor-img-intro {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+    #contenedor-img-intro img {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        margin: 30px 0px;
+    }
+    #contenedor-descripcion-intro {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    #contenedor-descripcion-intro h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+    #contenedor-descripcion-intro p {
+        font-size: 15px;
+        text-align: center;
+    }
+    /* cursos */
+    .curso {
+        width: calc(33% - 40px);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width: 480px){
+    .curso{
+        width: calc(40% - 40px);
+    }
+    #footer-logo img{
+        width: 50px;
+    }
+    #footer-logo h4{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 400px){
+    .media-account{
+        height: auto;
+    }
+    #footer-logo img{
+        width: 50px;
+    }
+    #footer-logo h4{
+        font-size: 14px;
+        margin: 0PX 10PX 0PX 15PX;
+    }
+    .social-media-content{
+        padding: 2.8px;
+    }
+    .social-media-content a img{
+        width: 20px;
+    }
+}
+/* Ajustando la pantalla a 320 ======================= */
+@media screen and (max-width: 350px) {
+    .introclaseHTML{
+        height: 500px;
+    }
+    #contenedor-img-intro img{
+        margin: 0px;
+    }
+    #contenedor-descripcion-intro h4{
+        font-size: 16px;
+    }
+    #contenedor-descripcion-intro p{
+        font-size: 13px;
+    }
+    .curso{
+        width: calc(49% - 40px);
+    }
+    .curso p {
+        font-size: 9px;
+    }
+
+    .curso h4 {
+        font-size: 10px;
+    }
+    .titulo-curso img{
+        width: 20px;
+    }
+    #titulo-de-cursos h4{
+        /* background-color: aqua; */
+        font-size: 19px;
+    }
+    #footer-logo{
+        width: 100%;
+    }
+    #social-meadia{
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+        height: 45px;
+    }
+    #footer-logo img{
+        width: 44px;
+    }
+    #footer-logo h4{
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+}
+/* Ajustando la pantalla a 225 ======================= */
+@media screen and (max-width: 225px) {
+    #descripcion-copy p{
+        font-size: 11px;
+        padding: 0;
+        margin: 0;
+    }
+}
